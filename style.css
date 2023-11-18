@@ -1,0 +1,101 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body header {
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8rem;
+  background-color: #222222;
+  color: #fff;
+  font-size: 1.8rem;
+}
+body header .logo {
+  width: 7rem;
+  height: 7rem;
+}
+body header .logo img {
+  width: 100%;
+  height: 100%;
+}
+body header .menu {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+body header .menu ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: space-between;
+  width: 90%;
+}
+body header .əlaqə {
+  background-color: #9FB576;
+  width: 12rem;
+  height: 4rem;
+  position: relative;
+}
+body header .əlaqə ::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  right: 5px;
+  top: -5px;
+  bottom: 5px;
+  border: 1px solid #fff;
+  z-index: 100;
+}
+body header .əlaqə a {
+  color: #fff;
+  text-decoration: none;
+}
+body .black {
+  background-color: #222222;
+  height: 35vh;
+}
+body .image-container {
+  position: absolute;
+  height: 100vh;
+  z-index: 5;
+}
+body .home {
+  position: relative;
+  top: -35vh;
+}
+body .home .swiper {
+  width: 85%;
+  height: 75vh;
+}
+body .home .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .home .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .home .swiper .swiper-slide h2 {
+  z-index: 1;
+}
+body .home .swiper .swiper-slide button {
+  z-index: 1;
+}/*# sourceMappingURL=style.css.map */
