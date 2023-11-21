@@ -2,22 +2,32 @@
   "service": [
     { 
         "id": 1,
-        "img":"/media/img1",
+        "img":"./media/img1.jpg",
         "header":"İnteryer dizayn",
         "info": "Hər bir məkanın daxili dizaynının ayrılmaz hissəsi gözəllik və funksionallıqdırsa orada istifadə olunan aksesuar, dekor, işıq sistemi isə o dizayna fərqlilik verməsi, yadda qalan etməsidir."
     },
     { 
         "id": 2,
-        "img":"/media/img2",
+        "img":"./media/img2.jpg",
         "header":" Eksteryer və Landşaft dizayn",
         "info": "Eksteryer dedikde ilk öncə ağıla gələn layihənin fasad görünüşüdür. Fasad dizaynında mütləq olaraq bina ölçüləri nəzərə alınmalıdır. Bu ölçülərə əsasən də üslub və bu üsluba uyğun materialı düzgün seçmək lazımdır."
     },
     { 
         "id": 3,
-        "img":"/media/img3",
+        "img":"./media/img3.jpg",
         "header":" Ticarət Obyektlərinin dizaynı ",
         "info":"Hər bir məkanın özünə xas xüsusiyyətləri vardır. Mütləqdir ki, burada məkanın bölgüsü, mebel yerləşimi düzgün təhlil olunmalı və üsluba uyğun dizayn edilməlidir. "
       }
+  ],
+  "section":[
+    {
+      "id":0,
+      "header":"Ölçü Götürülməsi",
+      "info":"Layihələrin mövcud vəziyyətinin mövcud vəziyyətinin ölçülərinin götürülməsi, qeydlərin aparılması"
+    
+      
+    },
+    {"username":"kdlm"}
   ]
 
 
