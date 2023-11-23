@@ -19,16 +19,43 @@
         "info":"Hər bir məkanın özünə xas xüsusiyyətləri vardır. Mütləqdir ki, burada məkanın bölgüsü, mebel yerləşimi düzgün təhlil olunmalı və üsluba uyğun dizayn edilməlidir. "
       }
   ],
-  "section":[
-    {
-      "id":0,
-      "header":"Ölçü Götürülməsi",
-      "info":"Layihələrin mövcud vəziyyətinin mövcud vəziyyətinin ölçülərinin götürülməsi, qeydlərin aparılması"
-    
-      
+  
+   "jobs":[ 
+    {"id":"01",
+      "name" :"Ölçü Götürülməsi",
+      "info" : "Layihələrin mövcud vəziyyətinin mövcud vəziyyətinin ölçülərinin götürülməsi, qeydlərin aparılması"
     },
-    {"username":"kdlm"}
-  ]
+    {"id":"02",
+      "name" :"Bölgü planı",
+      "info" : "Məkanın beton elementlərini eləcə də havalandırma santexnika şaxtalarının yerlərini nəzərə alaraq müştərinin də istəklərinə uyğun "
+    },
+    {"id":"03",
+      "name" :"Mebel həlli planı",
+      "info" : " Bərpa planından sonra yenilənmiş layihənin otaq bölgülərinə əsasən müştərinin istəyi ilə birgə müəyyən standartları da nəzərə alaraq mebel yerləşiminin işlənməsi. "
+    },
+    {"id":"04",
+      "name" :" Elektrik və santexnika təchizatı planı",
+      "info" : " Mebel həlli planı hazır olduqdan sonra yerləşimə əsasən elektrik və santexnika ölçülərinin işlənib hazırlanması."
+    },
+    {"id":"05",
+      "name" :"Məkanın dizayn və vizualizasiyası",
+      "info" : " Yerləşim və mebel həlli planı hazır olduqdan sonra müştərinin də müəyyən istəkləri nəzərə alınaraq düzgün üslub seçimi ilə məkanın 3D, vizualizasiya işlərinin görülməsi."
+    },
+    {"id":"06",
+    "name" :"Tavan ölçüləri",
+    "info" : "  Təsdiq olunmuş dizayna əsasən tavan alçıpan və elektrik ölçü xətlərinin düzgün işlənməsi.2"
+   },
+   {"id":"07",
+    "name" :"Kosmetik işlərin görülməsi",
+    "info" : "Dizaynda istifadə olunmuş bütün materialların ölçülərinin çıxarılması və matrial alımı üçün bütün məlumatların hazırlanması"
+   },
+   {"id":"08",
+    "name" :"Dekor və mebel",
+    "info" : " Dizaynda istifadə olunan bütün dekor və mebellərin ölçülərinin düzgün çıxarılması və müştərinin sifarişi üçün mebel dükanına göndərilməsi. "
+   }
+   
+   
+   ]
 
 
 }

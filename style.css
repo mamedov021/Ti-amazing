@@ -1,16 +1,14 @@
 @charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-}
-
-html, body {
-  font-size: 62.5%;
-  position: relative;
-  height: 100%;
 }
 
 header {
@@ -30,6 +28,9 @@ header .logo {
 header .logo img {
   width: 100%;
   height: 100%;
+}
+header .bars {
+  display: none;
 }
 header .menu {
   display: flex;
@@ -53,7 +54,7 @@ header .menu ul li {
 }
 header .menu ul li :hover {
   text-decoration: underline;
-  text-decoration-color: #9FB576;
+  text-decoration-color: #9fb576;
   text-decoration-thickness: 10px;
 }
 header .menu ul li a {
@@ -61,7 +62,7 @@ header .menu ul li a {
   color: #fff;
 }
 header .əlaqə {
-  background-color: #9FB576;
+  background-color: #9fb576;
   width: 12rem;
   height: 4rem;
   position: relative;
@@ -96,13 +97,16 @@ header .əlaqə a {
   width: 100%;
   height: 100%;
 }
-.home .swiper .swiper-horizontal > .swiper-pagination-bullets, .home .swiper .swiper-pagination-bullets.swiper-pagination-horizontal, .home .swiper .swiper-pagination-custom, .home .swiper .swiper-pagination-fraction {
+.home .swiper .swiper-horizontal > .swiper-pagination-bullets,
+.home .swiper .swiper-pagination-bullets.swiper-pagination-horizontal,
+.home .swiper .swiper-pagination-custom,
+.home .swiper .swiper-pagination-fraction {
   bottom: var(--swiper-pagination-bottom, 8px);
   top: var(--swiper-pagination-top, auto);
   left: -40%;
   bottom: 25px;
   width: 100%;
-  --swiper-pagination-color:green;
+  --swiper-pagination-color: green;
 }
 .home .swiper-slide {
   text-align: center;
@@ -135,7 +139,7 @@ header .əlaqə a {
   width: 250px;
   height: 50px;
   color: #fff;
-  background-color: #9FB576;
+  background-color: #9fb576;
   position: relative;
   border: none;
   margin-top: 45px;
@@ -150,9 +154,13 @@ header .əlaqə a {
   border: 1px solid #fff;
   z-index: 100;
 }
+
 .sec2 {
   background-color: #565656;
   padding-top: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .sec2 .main h2 {
   font-family: Baskerville;
@@ -175,10 +183,8 @@ header .əlaqə a {
 .sec2 .main .services :nth-child(2) .image::before {
   content: "";
   position: absolute;
-  left: -25px;
-  right: 25x;
-  top: -25px;
-  bottom: -25px;
+  left: -25px !important;
+  top: -25px !important;
   width: 100%;
   height: 100%;
   border: 1px solid #fff;
@@ -197,7 +203,7 @@ header .əlaqə a {
   content: "";
   position: absolute;
   left: 25px;
-  right: -25x;
+  right: -25px;
   top: -25px;
   bottom: -25px;
   width: 100%;
@@ -223,12 +229,11 @@ header .əlaqə a {
   font-size: 18px;
   font-weight: 300;
   line-height: 32px;
-  letter-spacing: 0em;
   text-align: left;
   color: #fff;
 }
 .sec2 .main .services .part .text button {
-  background-color: #9FB576;
+  background-color: #9fb576;
   width: 12rem;
   height: 4rem;
   margin-top: 2rem;
@@ -244,4 +249,208 @@ header .əlaqə a {
   bottom: 5px;
   border: 1px solid #fff;
   z-index: 100;
+}
+.sec2 .job_sections {
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10rem;
+}
+.sec2 .job_sections h2 {
+  font-weight: 400;
+  line-height: 60px;
+  text-align: center;
+  font-size: 48px;
+  color: #fff;
+}
+.sec2 .job_sections .jobs {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: #fff;
+  justify-content: space-around;
+  gap: 13rem;
+  margin-top: 4rem;
+}
+.sec2 .job_sections .jobs .job {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.sec2 .job_sections .jobs .job .id {
+  font-size: 3.6rem;
+  position: relative;
+}
+.sec2 .job_sections .jobs .job .id ::after {
+  content: " ";
+  position: absolute;
+  bottom: 5px;
+  border: 1px solid #fff;
+  z-index: 1000;
+}
+.sec2 .job_sections .jobs .job .name {
+  font-size: 2.5rem;
+}
+.sec2 .job_sections .jobs .job .info {
+  font-family: San Francisco;
+  line-height: 25px;
+  letter-spacing: 0.01rem;
+  text-align: left;
+  font-size: 18px;
+}
+.sec2 .portfolio {
+  padding-bottom: 5rem;
+  width: 100%;
+}
+.sec2 .portfolio h2 {
+  margin-top: 5rem;
+  font-weight: 400;
+  line-height: 60px;
+  text-align: center;
+  font-size: 48px;
+  color: #fff;
+}
+.sec2 .portfolio .swiper {
+  width: 85vw;
+  margin-top: 5rem;
+}
+.sec2 .portfolio .swiper .swiper-slide {
+  margin-top: 5rem 0;
+}
+.sec2 .portfolio .swiper .swiper-slide img {
+  width: 50vw;
+  height: 25vw;
+}
+.sec2 .request {
+  margin-bottom: 8rem;
+}
+.sec2 .request h2 {
+  text-align: center;
+  font-family: Baskerville;
+  font-weight: 400;
+  line-height: 59px;
+  letter-spacing: 0em;
+  font-size: 48px;
+  color: #fff;
+  text-align: center;
+  margin: 2rem;
+}
+.sec2 .request .container {
+  width: 85vw;
+  height: 25vh;
+  border: 1px solid #c4c4c4;
+  color: #c4c4c4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sec2 .request .container .text {
+  display: flex;
+  gap: 2rem;
+}
+.sec2 .request .container .text input {
+  width: 55%;
+  height: 4rem;
+  gap: 2rem;
+  border: 1px solid #c4c4c4;
+  background-color: #565656;
+  color: #c4c4c4;
+  padding-left: 1rem;
+}
+.sec2 .request .container .sub {
+  position: relative;
+}
+.sec2 .request .container .sub::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  width: 18rem;
+  height: 4rem;
+  border: 1px solid #fff;
+  z-index: 100;
+}
+.sec2 .request .container .sub #submit {
+  width: 18rem;
+  height: 4rem;
+  background-color: #9fb576;
+  border: none;
+  color: #fff;
+}
+
+footer {
+  background-color: #9fb576;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75vw;
+  padding: 5rem 0 3rem 0;
+}
+footer .footer .menu {
+  display: flex;
+}
+footer .footer .menu ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+footer .footer .menu ul li {
+  font-family: San Francisco;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  font-size: 2rem;
+}
+footer .footer .menu ul li a {
+  color: #fff;
+}
+footer .footer hr {
+  width: 100%;
+  margin: 3rem 0;
+  border: 1px solid #fff;
+}
+footer .footer .contact {
+  display: flex;
+  justify-content: space-around;
+  font-family: San Francisco;
+  font-weight: 300;
+  line-height: 21px;
+  text-align: center;
+  font-size: 18px;
+}
+footer .footer .contact a {
+  color: #fff;
+}
+footer .footer .media {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 5rem;
+  font-size: 4rem;
+}
+
+@media (max-width: 1020px) {
+  header .bars {
+    display: flex;
+  }
+  header .menu {
+    order: 2;
+    width: 155px;
+  }
+  header .menu ul {
+    display: block;
+    z-index: 100;
+  }
+  header .menu ul li {
+    text-align: start;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -13,7 +13,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <title>Document</title>
     <style></style>
@@ -23,10 +23,10 @@
       <div class="logo">
         <img src="/media/BLACK LOGO2x2 1.png" alt="logo" />
       </div>
-      <div class="menu">
+      <div class="menu ">
         <ul>
           <li class="li"><a href="/index.html">Əsas səhifə</a></li>
-          <li class="li"><a>Xidmətlərimiz</a></li>
+          <li class="li"><a href="/services.html">Xidmətlərimiz</a></li>
           <li class="li"><a>Portfolio</a></li>
           <li class="li"><a>Əlaqə</a></li>
           <li class="li"><a>Haqqımızda</a></li>
@@ -36,11 +36,12 @@
       <button class="əlaqə">
         <a href=""> Əlaqə <i class="fa-solid fa-arrow-right-long"></i></a>
       </button>
+      <div class="bars"><i class="fa-solid fa-bars fa-flip-horizontal"></i></div>
     </header>
     <!-- Section-1 -->
     <section class="sec1">
       <div class="home">
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper2">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="/media/Rectangle 3.png" alt="" />
@@ -66,20 +67,97 @@
     </section>
     <!-- Section-2 -->
     <section class="sec2">
-       
-        <div class="main">
-          <h2>Xidmətlərimiz</h2>
+      <div class="main">
+        <h2>Xidmətlərimiz</h2>
 
-          <div class="services">
+        <div class="services"></div>
+      </div>
+
+      <div class="job_sections">
+        <h2>İşimizin mərhələləri</h2>
+        <div class="jobs"></div>
+      </div>
+
+      <div class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="swiper portfolio-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./media/slider2.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./media/slider.jpeg" />
+            </div>
+            
+            <div class="swiper-slide">
+              <img src="./media/slider3.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./media/slider2.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./media/slider.jpeg" />
+            </div>
+            
+            <div class="swiper-slide">
+              <img src="./media/slider3.png" />
+            </div>
+             
+
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> 
         </div>
-       
+         
+      </div>
+
+    <div class="request">
+      <h2>Hər hansı bir sualınız var? <br> Online müraciət göndərin</h2>
+      <div class="container">
+        <div class="text">
+          <input type="text" id="name" placeholder="Ad, Soyad">
+          <input type="text" id="tel" placeholder="Telefon nömrəsi">
+        </div>
+        <div class="sub">
+        <input type="submit" id="submit" value="Göndər " />
+        </div>
+      </div>
+    </div>
     </section>
+
+    <footer>
+      <div class="footer">
+        <div class="menu">
+          <ul>
+            <li class="li"><a href="/index.html">Əsas səhifə</a></li>
+            <li class="li"><a>Xidmətlərimiz</a></li>
+            <li class="li"><a>Portfolio</a></li>
+            <li class="li"><a>Əlaqə</a></li>
+            <li class="li"><a>Haqqımızda</a></li>
+            <li class="li"><a>AZ</a></li>
+          </ul>
+        </div> 
+        <hr />
+        <div class="contact">
+          <a href="tel:+994 51 409 27 04">+994 51 409 27 04</a>
+          <a href="tel:+994 12 409 27 04"> +994 12 409 27 04</a>
+          <a href="mailto:ti_amazing@mail.ru">ti_amazing@mail.ru</a>
+          <span>Baku şəh., Cavadxan 14</span>
+        </div>
+        <div class="media">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-square-behance"></i>
+        </div>
+      </div>
+
+    </footer>
 
     <!--        JavaScript implement code                     -->
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="/main.js"></script>
   </body>
 </html>
