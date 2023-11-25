@@ -1,0 +1,36 @@
+.sec2 {
+  padding-top: 4rem !important;
+}
+.sec2 .main {
+  background-color: #565656;
+}
+.sec2 .main .our_service {
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: center;
+  font-size: 48px;
+  color: #fff;
+  position: relative;
+  margin-top: 5rem;
+}
+.sec2 .main .our_service::before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  top: 50%;
+  left: 10%;
+  border: 1px solid #fff;
+}
+.sec2 .main .our_service::after {
+  content: "";
+  position: absolute;
+  width: 25%;
+  top: 50%;
+  right: 10%;
+  border: 1px solid #fff;
+}
+
+.image::before {
+  display: none;
+}/*# sourceMappingURL=services.css.map */

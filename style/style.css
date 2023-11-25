@@ -12,9 +12,9 @@ html {
 }
 
 header {
-  padding: 0 5%;
+  padding: 0 7.5vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 8rem;
   background-color: #222222;
@@ -35,14 +35,15 @@ header .bars {
 header .menu {
   display: flex;
   align-items: center;
-  width: 70%;
+  padding-left: 10rem;
+  width: 100%;
 }
 header .menu ul {
   display: flex;
   align-items: center;
   list-style: none;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
 }
 header .menu ul li {
   font-family: San Francisco;
@@ -51,33 +52,46 @@ header .menu ul li {
   line-height: 22px;
   letter-spacing: 0em;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
-header .menu ul li :hover {
-  text-decoration: underline;
-  text-decoration-color: #9fb576;
-  text-decoration-thickness: 10px;
+header .menu ul li:after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 62%;
+  left: 0;
+  height: 10px;
+  width: 0;
+  transition: 0.5s;
+  background-color: #9fb576;
+}
+header .menu ul li:hover::after {
+  width: 100%;
 }
 header .menu ul li a {
   text-decoration: none;
   color: #fff;
+  position: relative;
+  z-index: 1;
 }
-header .əlaqə {
+header .menu ul .əlaqə {
   background-color: #9fb576;
   width: 12rem;
   height: 4rem;
   position: relative;
 }
-header .əlaqə ::before {
+header .menu ul .əlaqə::before {
   content: "";
   position: absolute;
-  left: -5px;
-  right: 5px;
-  top: -5px;
-  bottom: 5px;
+  left: -7px;
+  right: -7px;
+  top: -7px;
+  bottom: 7px;
   border: 1px solid #fff;
   z-index: 100;
 }
-header .əlaqə a {
+header .menu ul .əlaqə a {
   text-decoration: none;
 }
 
@@ -144,7 +158,7 @@ header .əlaqə a {
   border: none;
   margin-top: 45px;
 }
-.home .swiper-slide .info button ::before {
+.home .swiper-slide .info button::before {
   content: "";
   position: absolute;
   left: -5px;
@@ -240,7 +254,7 @@ header .əlaqə a {
   position: relative;
   border: none;
 }
-.sec2 .main .services .part .text button ::before {
+.sec2 .main .services .part .text button::before {
   content: "";
   position: absolute;
   left: -5px;
@@ -267,7 +281,7 @@ header .əlaqə a {
 .sec2 .job_sections .jobs {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   color: #fff;
   justify-content: space-around;
   gap: 13rem;
@@ -438,13 +452,40 @@ footer .footer .media {
   font-size: 4rem;
 }
 
+.active {
+  display: block;
+}
+
 @media (max-width: 1020px) {
-  header .bars {
+  header {
     display: flex;
+    justify-content: space-around;
+  }
+  header .bars {
+    display: block;
   }
   header .menu {
-    order: 2;
-    width: 155px;
+    display: none;
+    padding-left: 0;
+  }
+  header .menu.active {
+    display: flex !important;
+    top: 8rem;
+    position: absolute;
+    width: 200px;
+    height: 95vh;
+    z-index: 10;
+    background-color: #222222;
+    left: 0;
+    transform: translateX(0%);
+    transition: 0.5s;
+    animation: mymove 2s forwards;
+  }
+  header .menu.active ul {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   header .menu ul {
     display: block;
@@ -452,5 +493,13 @@ footer .footer .media {
   }
   header .menu ul li {
     text-align: start;
+  }
+}
+@keyframes mymove {
+  from {
+    top: -95vh;
+  }
+  to {
+    top: 8rem;
   }
 }/*# sourceMappingURL=style.css.map */

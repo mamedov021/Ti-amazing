@@ -1,29 +1,4 @@
-var swiper = new Swiper(".mySwiper2", {
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
 
-var swiper = new Swiper(".portfolio-swiper", {
-  effect: "coverflow",
-  grabCursor: true,
-  loop: true,
-  slidesPerView: 3,
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 0,
-    depth: 100,
-    modifier: 4,
-    slideShadows: true,
-  },
-  loop: true,
-     
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
- 
-});
 const services = document.querySelector(".services");
 
 fetch("http://localhost:3000/service")
@@ -64,16 +39,27 @@ fetch(job_url)
      <div class="info">${info}</div> 
     </div>
   `;
-      //console.log(info);
+       console.log(info);
     });
   })
   .catch((err) => {
     console.log(err);
   });
 
+  
   let menu = document.querySelector('.menu');
   let bars = document.querySelector('.bars');
+  let bars_i=document.querySelector('.bars i');
+
   bars.addEventListener("click", ()=> {
-    menu.style.display = "none"; 
-    console.log("ok")
+    menu.classList.toggle("active") ;
+    if(bars_i.classList.contains("fa-bars")){
+      bars_i.classList.replace("fa-bars", "fa-x")  
+    }
+    else{
+      bars_i.classList.replace("fa-x", "fa-bars")
+    }
+    
+     
   })
+ 

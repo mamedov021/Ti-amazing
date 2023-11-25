@@ -1,0 +1,25 @@
+ 
+ .portfolio_container{
+    background-color: #565656;
+    // height: 100px;
+    
+    .content{
+        display:flex;
+        flex-direction:column;
+         
+        img{
+            width: 25%;
+
+        }
+        h4{
+            font-family: Baskerville;
+            font-weight: 400;
+            line-height: 43px;
+            letter-spacing: 0em;
+            text-align: left;
+            font-size: 24px;
+            color: #fff;
+
+        }
+    }
+ }

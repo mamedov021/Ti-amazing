@@ -1,0 +1,19 @@
+.portfolio_container {
+  background-color: #565656;
+}
+.portfolio_container .content {
+  display: flex;
+  flex-direction: column;
+}
+.portfolio_container .content img {
+  width: 25%;
+}
+.portfolio_container .content h4 {
+  font-family: Baskerville;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-size: 24px;
+  color: #fff;
+}/*# sourceMappingURL=portfolio.css.map */
