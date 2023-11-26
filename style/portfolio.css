@@ -1,12 +1,17 @@
-.portfolio_container {
+body {
   background-color: #565656;
+}
+
+.portfolio_container {
+  width: 85vw;
+  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 4rem;
 }
 .portfolio_container .content {
   display: flex;
   flex-direction: column;
-}
-.portfolio_container .content img {
-  width: 25%;
 }
 .portfolio_container .content h4 {
   font-family: Baskerville;

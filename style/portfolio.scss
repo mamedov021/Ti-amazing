@@ -1,14 +1,20 @@
- 
+body{
+     background-color: #565656;
+
+ }
  .portfolio_container{
-    background-color: #565656;
-    // height: 100px;
+    width: 85vw;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr) );
+    gap: 4rem;
     
     .content{
         display:flex;
         flex-direction:column;
          
         img{
-            width: 25%;
+            
 
         }
         h4{

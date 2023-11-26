@@ -42,9 +42,7 @@ fetch(job_url)
        console.log(info);
     });
   })
-  .catch((err) => {
-    console.log(err);
-  });
+  
 
   
   let menu = document.querySelector('.menu');
@@ -62,4 +60,28 @@ fetch(job_url)
     
      
   })
+ 
+
+
+  
+  let portfolio = document.querySelector(".portfolio_container");
+  fetch("http://localhost:3000/portfolio")
+  .then((res)=>res.json())
+  .then((data)=>{
+    data.forEach(({id, img, name})=>{
+      portfolio.innerHTML +=`
+      <div class="content">
+      <img src="${img}" alt="">
+      <h4>${name}  ${id}</h4>
+    
+
+  </div>
+      `;
+ 
+
+    })
+
+  }) .catch((err) => {
+    console.log(err);
+  });
  

@@ -55,6 +55,61 @@
    }
    
    
+   ],
+   "portfolio":[
+    { "id": "1",
+      "img": "./media/portfolio/p1.jpg" ,
+      "name":"Lorem ipsum"
+    },
+    { "id": "2",
+      "img": "./media/portfolio/p2.jpg" ,
+      "name":"Lorem ipsum"
+    },
+    { "id": "3",
+      "img": "./media/portfolio/p3.jpg" ,
+      "name":"Lorem ipsum"
+    },
+    { "id": "4",
+      "img": "./media/portfolio/p4.jpg" ,
+      "name":"Lorem ipsum"
+    },
+    { "id": "5",
+      "img": "./media/portfolio/p5.jpg" ,
+      "name":"Lorem ipsum"
+    },
+    { "id": "6",
+      "img": "./media/portfolio/p6.jpg" ,
+      "name":"Lorem ipsum"
+    },
+    { "id": "7",
+      "img": "./media/portfolio/p7.jpg" ,
+      "name":"Lorem ipsum"
+    },
+    { "id": "8",
+      "img": "./media/portfolio/p8.jpg" ,
+      "name":"Lorem ipsum"
+    },
+    { "id": "9",
+      "img": "./media/portfolio/p9.jpg" ,
+      "name":"Lorem ipsum"
+    },
+    { "id": "10",
+      "img": "./media/portfolio/p10.jpg" ,
+      "name":"Lorem ipsum"
+    },
+    { "id": "11",
+      "img": "./media/portfolio/p11.jpg" ,
+      "name":"Lorem ipsum"
+    },
+    { "id": "12",
+      "img": "./media/portfolio/p12.jpg" ,
+      "name":"Lorem ipsum"
+    },
+    { "id": "13",
+      "img": "./media/portfolio/p13.jpg" ,
+      "name":"Lorem ipsum"
+    }
+    
    ]
 
 
