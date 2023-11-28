@@ -72,15 +72,10 @@ fetch(job_url)
       portfolio.innerHTML +=`
       <div class="content">
       <img src="${img}" alt="">
-      <h4>${name}  ${id}</h4>
-    
-
+      <h4>${name}  ${id}</h4> 
   </div>
-      `;
- 
-
-    })
-
+      `; 
+    }) 
   }) .catch((err) => {
     console.log(err);
   });

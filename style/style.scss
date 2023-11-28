@@ -75,6 +75,13 @@ header {
           color: #fff;
           position: relative;
           z-index: 1;
+          font-family: San Francisco;
+          font-weight: 300;
+          line-height: 21px;
+          letter-spacing: 0em;
+          text-align: center;
+          font-size: 18px;
+
         }
       }
       .əlaqə {
@@ -82,16 +89,22 @@ header {
         width: 12rem;
         height: 4rem;
         position: relative;
-        // :hover{
-        //   width: 12rem;
-        //   height: 4rem;
-        //   left: -5px;
-        //   right: -5px;
-        //   top: -5px;
-        //   bottom: 5px;
-        //   background-color: #a40c0c;
-        // }
-
+        cursor: pointer;
+        a{
+           color: #fff;
+        }
+       
+        &:hover { 
+          &::before{ 
+           transition:all 0.5s ease;
+           left: 0px;
+           right: 0px;
+           top: 0px;
+           bottom: 0px;
+          }
+         }
+         
+       
         &::before {
           content: "";
           position: absolute;
@@ -173,16 +186,30 @@ header {
         position: relative;
         border: none;
         margin-top: 45px;
+        &:hover {
+         
+         
+         &::before{ 
+          transition:all 0.5s ease;
+          left: 0px;
+          right: 0px;
+          top: 0px;
+          bottom: 0px;
+         }
+        }
         &::before {
           content: "";
           position: absolute;
+          
           left: -5px;
           right: -5px;
           top: -5px;
           bottom: 5px;
           border: 1px solid #fff;
           z-index: 100;
+          
         }
+        
       }
     }
   }
@@ -194,6 +221,23 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  .connection{
+    width: 100%;
+    margin-left:10rem;
+    i{
+      color: #fff;
+    }
+    a{
+      color: #fff;
+      font-family: Jaldi;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: center;
+      font-size: 12px; 
+    }
+    
+  }
   .main {
     h2 {
       font-family: Baskerville;

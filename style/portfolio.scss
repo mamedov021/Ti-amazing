@@ -2,7 +2,38 @@ body{
      background-color: #565656;
 
  }
- .portfolio_container{
+ .container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+   .buttons{
+    margin-top: 3rem;
+    width: 85vw;
+    display: flex;
+    justify-content:space-between;
+    height: 4rem;
+    
+    button{
+        font-family: San Francisco;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #FFFFFF;
+        background-color:#565656;
+        border:1px solid #fff;
+        padding:  0 2rem;
+       &:active{
+        background-color: #9fb576;
+
+        
+       }
+        
+    }
+   }
+   .portfolio_container{
     width: 85vw;
     margin: 5rem auto;
     display: grid;
@@ -29,3 +60,6 @@ body{
         }
     }
  }
+
+ }
+ 

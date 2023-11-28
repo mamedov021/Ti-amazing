@@ -74,12 +74,29 @@ header .menu ul li a {
   color: #fff;
   position: relative;
   z-index: 1;
+  font-family: San Francisco;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  font-size: 18px;
 }
 header .menu ul .əlaqə {
   background-color: #9fb576;
   width: 12rem;
   height: 4rem;
   position: relative;
+  cursor: pointer;
+}
+header .menu ul .əlaqə a {
+  color: #fff;
+}
+header .menu ul .əlaqə:hover::before {
+  transition: all 0.5s ease;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
 }
 header .menu ul .əlaqə::before {
   content: "";
@@ -158,6 +175,13 @@ header .menu ul .əlaqə a {
   border: none;
   margin-top: 45px;
 }
+.home .swiper-slide .info button:hover::before {
+  transition: all 0.5s ease;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+}
 .home .swiper-slide .info button::before {
   content: "";
   position: absolute;
@@ -175,6 +199,22 @@ header .menu ul .əlaqə a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.sec2 .connection {
+  width: 100%;
+  margin-left: 10rem;
+}
+.sec2 .connection i {
+  color: #fff;
+}
+.sec2 .connection a {
+  color: #fff;
+  font-family: Jaldi;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  font-size: 12px;
 }
 .sec2 .main h2 {
   font-family: Baskerville;

@@ -2,18 +2,46 @@ body {
   background-color: #565656;
 }
 
-.portfolio_container {
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .buttons {
+  margin-top: 3rem;
+  width: 85vw;
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+}
+.container .buttons button {
+  font-family: San Francisco;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #565656;
+  border: 1px solid #fff;
+  padding: 0 2rem;
+}
+.container .buttons button:active {
+  background-color: #9fb576;
+}
+.container .portfolio_container {
   width: 85vw;
   margin: 5rem auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 4rem;
 }
-.portfolio_container .content {
+.container .portfolio_container .content {
   display: flex;
   flex-direction: column;
 }
-.portfolio_container .content h4 {
+.container .portfolio_container .content h4 {
   font-family: Baskerville;
   font-weight: 400;
   line-height: 43px;

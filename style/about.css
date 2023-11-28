@@ -1,0 +1,9 @@
+.about .header {
+  display: flex;
+  justify-content: center;
+}
+.about .header hr {
+  width: 20%;
+  height: 30px;
+  border: 1px solid black;
+}/*# sourceMappingURL=about.css.map */

@@ -1,5 +1,5 @@
 .sec2 {
-  padding-top: 4rem !important;
+  padding: 4rem 0 !important;
 }
 .sec2 .main {
   background-color: #565656;
@@ -16,21 +16,25 @@
 }
 .sec2 .main .our_service::before {
   content: "";
-  position: absolute;
   width: 25%;
-  top: 50%;
-  left: 10%;
+  margin: 19px 14px 14px 0;
   border: 1px solid #fff;
+  display: inline-block;
 }
 .sec2 .main .our_service::after {
   content: "";
-  position: absolute;
   width: 25%;
-  top: 50%;
-  right: 10%;
+  margin: 19px 14px 14px 19px;
   border: 1px solid #fff;
+  display: inline-block;
 }
 
 .image::before {
   display: none;
+}
+
+@media (max-width: 1020px) {
+  .our_service::after, ::before {
+    display: none !important;
+  }
 }/*# sourceMappingURL=services.css.map */
