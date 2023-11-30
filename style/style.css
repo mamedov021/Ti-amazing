@@ -64,6 +64,8 @@ header .menu ul li:after {
   height: 10px;
   width: 0;
   transition: 0.5s;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #9fb576;
 }
 header .menu ul li:hover::after {
@@ -533,6 +535,11 @@ footer .footer .media {
   }
   header .menu ul li {
     text-align: start;
+  }
+  footer .menu ul, footer .contact {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
 }
 @keyframes mymove {

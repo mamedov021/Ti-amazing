@@ -1,0 +1,198 @@
+.about{
+    background-color:#565656 ;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .header{
+        display: flex;
+        justify-content: center;
+        padding-top: 5rem;
+        width: 85vw; 
+         
+        hr{
+            width:100%;
+             
+            display: inline-block;
+            margin:26px 0;
+            background-color: #000;
+             
+        }
+        h2{
+            font-family: Petrona;
+            font-weight: 500;
+            line-height: 54px;
+            letter-spacing: 0em;
+            text-align: center;
+            font-size: 48px;
+            margin:  0 2rem;
+        }
+
+    }
+    .about_info{
+        margin-top: 3rem;
+        width: 85vw; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+         
+        div{
+            margin-top: 3rem;
+            width: 85%;
+            display: flex; 
+            justify-content: space-around;
+            a{
+                font-family: Jaldi;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 30px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: #fff;
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+
+            }
+        }
+
+    }
+    .request{
+        margin:8rem 0;
+        h2{
+            text-align: center;
+            font-family: Petrona;
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 45px;
+            letter-spacing: 0em;
+            text-align: center;
+
+        }
+        .main{
+         display: flex;
+         justify-content: space-between;
+         width: 85vw;
+         //height: 32rem;
+         margin-top: 5rem;
+         .image{
+             width:49%; 
+             img{
+              width: 100%;
+              height: 100%; 
+          }
+         }
+        
+         form{
+            padding: 3rem;
+            border: 1px solid #fff;
+            width:49%;
+            display: flex;
+            flex-direction: column;
+            //align-items: center;
+            div{
+                width:100%;
+                display: flex;
+                justify-content:space-between;
+                margin-bottom: 3rem;
+            }
+            input{
+                
+                width:47%;
+                height: 4rem;
+                background-color: #565656;
+                color: #fff;
+                padding-left: 10px;
+                border: 1px solid #fff;
+                &::placeholder{
+                    color: #fff;
+                    padding-left:1rem
+                }
+                
+            }
+            #message{ 
+               border: 1px solid #fff;
+               padding:8px;
+            background-color: #565656;
+            
+            &::placeholder{
+                color: #fff;
+            }
+        }
+
+         }
+       
+        }
+         
+        .btn{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            
+            button{
+                    height: 5rem;
+                    width: 20rem;
+                    background-color:#9fb576;
+                    border:none;
+                    position: relative;
+                    color: #fff;
+                    margin-top: 3rem; 
+                    margin-right: 5px;  
+        
+                    &::after{
+                        content: " ";
+                        position: absolute;
+                        border: 1px solid #fff;
+                        top:-5px;
+                        left:-5px;
+                        right:-5px;
+                        bottom: 5px;
+                        z-index: 1 ;
+        
+                    }
+
+
+                    &:hover {
+         
+         
+                        &::after{ 
+                         transition:all 0.5s ease;
+                         left: 0px;
+                         right: 0px;
+                         top: 0px;
+                         bottom: 0px;
+                        }
+                       }
+
+            }
+        }
+
+    }
+}
+@media (max-width:1020px){
+    .about_info{
+        div{
+            display:grid !important;
+            grid-template-columns: 1fr 1fr;
+        }
+
+    }
+    .request {
+        .main{
+            display: block !important;
+              form{
+                margin-top: 2rem;
+                width: 100% !important;
+            }
+            .image{
+                width: 100%!important; 
+                img{
+                    
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
