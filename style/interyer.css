@@ -1,64 +1,63 @@
-.contacts {
+.interyer {
   background-color: #565656;
-  color: #fff;
+  width: 100vw;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  color: #fff;
 }
-.contacts .header {
+.interyer .header {
   display: flex;
   justify-content: center;
   padding-top: 5rem;
   width: 85vw;
 }
-.contacts .header hr {
+.interyer .header hr {
   width: 100%;
+  height: 3px;
+  border: none;
   display: inline-block;
   margin: 26px 0;
-  background-color: #000;
+  background-color: #fff;
 }
-.contacts .header h2 {
+.interyer .header h2 {
   font-family: Petrona;
   font-weight: 500;
   line-height: 54px;
   letter-spacing: 0em;
   text-align: center;
   font-size: 48px;
-  margin: 0 2rem;
+  margin: 0 4rem;
 }
-.contacts .contact_info {
-  margin-top: 3rem;
+.interyer .interyer_info {
+  margin-top: 5rem;
+  display: flex;
   width: 85vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  gap: 2rem;
 }
-.contacts .contact_info div {
-  margin-top: 3rem;
-  width: 85%;
-  display: flex;
-  justify-content: space-around;
+.interyer .interyer_info img {
+  width: 50%;
 }
-.contacts .contact_info div a {
+.interyer .interyer_info .info {
+  width: 50%;
   font-family: Jaldi;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 30px;
+  font-size: 2rem;
+  line-height: 25px;
   letter-spacing: 0em;
-  text-align: center;
-  color: #fff;
-  display: flex;
-  gap: 1rem;
-  align-items: center;
+  text-align: left;
+  font-weight: 400;
 }
-.contacts .request {
+.interyer .sec2 {
+  padding-top: 0;
+}
+.interyer .request {
   margin: 8rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.contacts .request h2 {
+.interyer .request h2 {
   text-align: center;
   font-family: Petrona;
   font-size: 36px;
@@ -67,33 +66,33 @@
   letter-spacing: 0em;
   text-align: center;
 }
-.contacts .request .main {
+.interyer .request .main {
   display: flex;
   justify-content: space-between;
   width: 85vw;
   margin-top: 5rem;
 }
-.contacts .request .main .image {
+.interyer .request .main .image {
   width: 49%;
 }
-.contacts .request .main .image img {
+.interyer .request .main .image img {
   width: 100%;
   height: 100%;
 }
-.contacts .request .main form {
+.interyer .request .main form {
   padding: 3rem;
   border: 1px solid #fff;
   width: 49%;
   display: flex;
   flex-direction: column;
 }
-.contacts .request .main form div {
+.interyer .request .main form div {
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 3rem;
 }
-.contacts .request .main form input {
+.interyer .request .main form input {
   width: 47%;
   height: 4rem;
   background-color: #565656;
@@ -101,31 +100,31 @@
   padding-left: 10px;
   border: 1px solid #fff;
 }
-.contacts .request .main form input::-moz-placeholder {
+.interyer .request .main form input::-moz-placeholder {
   color: #fff;
   padding-left: 1rem;
 }
-.contacts .request .main form input::placeholder {
+.interyer .request .main form input::placeholder {
   color: #fff;
   padding-left: 1rem;
 }
-.contacts .request .main form #message {
+.interyer .request .main form #message {
   border: 1px solid #fff;
   padding: 8px;
   background-color: #565656;
 }
-.contacts .request .main form #message::-moz-placeholder {
+.interyer .request .main form #message::-moz-placeholder {
   color: #fff;
 }
-.contacts .request .main form #message::placeholder {
+.interyer .request .main form #message::placeholder {
   color: #fff;
 }
-.contacts .request .btn {
+.interyer .request .btn {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
-.contacts .request .btn button {
+.interyer .request .btn button {
   height: 5rem;
   width: 20rem;
   background-color: #9fb576;
@@ -135,7 +134,7 @@
   margin-top: 3rem;
   margin-right: 5px;
 }
-.contacts .request .btn button::after {
+.interyer .request .btn button::after {
   content: " ";
   position: absolute;
   border: 1px solid #fff;
@@ -145,30 +144,10 @@
   bottom: 5px;
   z-index: 1;
 }
-.contacts .request .btn button:hover::after {
+.interyer .request .btn button:hover::after {
   transition: all 0.5s ease;
   left: 0px;
   right: 0px;
   top: 0px;
   bottom: 0px;
-}
-
-@media (max-width: 1020px) {
-  .about_info div {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr;
-  }
-  .request .main {
-    display: block !important;
-  }
-  .request .main form {
-    margin-top: 2rem;
-    width: 100% !important;
-  }
-  .request .main .image {
-    width: 100% !important;
-  }
-  .request .main .image img {
-    width: 100%;
-  }
-}/*# sourceMappingURL=contact.css.map */
+}/*# sourceMappingURL=interyer.css.map */

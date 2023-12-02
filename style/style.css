@@ -237,13 +237,15 @@ header .menu ul .əlaqə a {
   order: 1;
 }
 .sec2 .main .services :nth-child(2) .image::before {
-  content: "";
-  position: absolute;
   left: -25px !important;
   top: -25px !important;
-  width: 100%;
-  height: 100%;
-  border: 1px solid #fff;
+}
+.sec2 .main .services :nth-child(2) .image:hover::before {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: 0.5s;
 }
 .sec2 .main .services .part {
   margin-top: 10rem;
@@ -265,6 +267,13 @@ header .menu ul .əlaqə a {
   width: 100%;
   height: 100%;
   border: 1px solid #fff;
+}
+.sec2 .main .services .part .image:hover::before {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: 0.5s;
 }
 .sec2 .main .services .part .image img {
   width: 100%;
@@ -305,6 +314,13 @@ header .menu ul .əlaqə a {
   bottom: 5px;
   border: 1px solid #fff;
   z-index: 100;
+}
+.sec2 .main .services .part .text button:hover::before {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: 0.5s;
 }
 .sec2 .job_sections {
   width: 85vw;
@@ -427,6 +443,13 @@ header .menu ul .əlaqə a {
   border: 1px solid #fff;
   z-index: 100;
 }
+.sec2 .request .container .sub:hover::before {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
 .sec2 .request .container .sub #submit {
   width: 18rem;
   height: 4rem;
@@ -540,6 +563,13 @@ footer .footer .media {
     display: grid !important;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+  }
+  footer .media {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  footer .media i {
+    text-align: center;
   }
 }
 @keyframes mymove {

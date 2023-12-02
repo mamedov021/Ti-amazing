@@ -110,7 +110,81 @@
       "name":"Lorem ipsum"
     }
     
-   ]
+   ],
+   "our_team":[
+    {"id":1,
+      "img": "./media/our_team/1.png",
+      "name":"Adam Myller",
+      "prof":"Designer"
+    },
+    {"id":2,
+    "img": "./media/our_team/2.png",
+    "name":"Adam Myller",
+    "prof":"Designer"
+    },
+    {"id":3,
+    "img": "./media/our_team/3.png",
+    "name":"Adam Myller",
+    "prof":"Designer"
+    },
+    {"id":4,
+    "img": "./media/our_team/4.png",
+    "name":"Adam Myller",
+    "prof":"Designer"
+    },
+    {"id":5,
+     "img": "./media/our_team/5.png",
+     "name":"Adam Myller",
+     "prof":"Designer"
+    },
+    {"id":6,
+    "img": "./media/our_team/6.png",
+    "name":"Adam Myller",
+    "prof":"Designer"
+    },
+    {"id":7,
+    "img": "./media/our_team/7.png",
+    "name":"Adam Myller",
+    "prof":"Designer"
+    },
+    {"id":8,
+     "img": "./media/our_team/8.png",
+     "name":"Adam Myller",
+     "prof":"Designer"
+    }
+
+
+  
+  ],
+  "lorem":[
+    {
+      "id":1,
+      "img":"./media/lorem/lorem1.png"
+    },
+    {
+      "id":2,
+      "img":"./media/lorem/lorem2.png"
+    },
+    {
+      "id":3,
+      "img":"./media/lorem/lorem3.png"
+    },
+    {
+      "id":4,
+      "img":"./media/lorem/lorem4.png"
+    },
+    {
+      "id":5,
+      "img":"./media/lorem/lorem5.png"
+    },
+    {
+      "id":6,
+      "img":"./media/lorem/lorem6.png"
+    }
+
+    
+    
+    ]
 
 
 }
