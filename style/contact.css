@@ -154,6 +154,17 @@
 }
 
 @media (max-width: 1020px) {
+  .contact_info div {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+    justify-content: center !important;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .contact_info div a {
+    display: grid !important;
+    text-align: center;
+  }
   .about_info div {
     display: grid !important;
     grid-template-columns: 1fr 1fr;

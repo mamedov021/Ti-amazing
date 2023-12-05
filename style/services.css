@@ -1,6 +1,10 @@
 .sec2 {
   padding: 4rem 0 !important;
 }
+.sec2 .connection {
+  margin-left: 0rem !important;
+  padding-left: 5rem;
+}
 .sec2 .main {
   background-color: #565656;
 }
@@ -36,5 +40,14 @@
 @media (max-width: 1020px) {
   .our_service::after, ::before {
     display: none !important;
+  }
+  .sec2 .part {
+    display: block !important;
+  }
+  .sec2 .part .text, .sec2 .part .image {
+    width: 100% !important;
+  }
+  .sec2 .part a {
+    text-align: right;
   }
 }/*# sourceMappingURL=services.css.map */

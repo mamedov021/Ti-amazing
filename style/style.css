@@ -233,20 +233,6 @@ header .menu ul .əlaqə a {
   justify-content: center;
   align-items: center;
 }
-.sec2 .main .services :nth-child(2) .image {
-  order: 1;
-}
-.sec2 .main .services :nth-child(2) .image::before {
-  left: -25px !important;
-  top: -25px !important;
-}
-.sec2 .main .services :nth-child(2) .image:hover::before {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transition: 0.5s;
-}
 .sec2 .main .services .part {
   margin-top: 10rem;
   display: flex;
@@ -321,6 +307,18 @@ header .menu ul .əlaqə a {
   top: 0;
   bottom: 0;
   transition: 0.5s;
+}
+.sec2 .main .services :nth-child(2) .image {
+  order: 1;
+}
+.sec2 .main .services :nth-child(2) .image::before {
+  left: -25px;
+  top: -25px;
+  transition: 0.5s;
+}
+.sec2 .main .services :nth-child(2) .image:hover::before {
+  left: 0;
+  top: 0;
 }
 .sec2 .job_sections {
   width: 85vw;
@@ -534,7 +532,7 @@ footer .footer .media {
     padding-left: 0;
   }
   header .menu.active {
-    display: flex !important;
+    display: block !important;
     top: 8rem;
     position: absolute;
     width: 200px;
@@ -545,6 +543,11 @@ footer .footer .media {
     transform: translateX(0%);
     transition: 0.5s;
     animation: mymove 2s forwards;
+  }
+  header .menu.active .bars_2 {
+    display: block;
+    text-align: right;
+    margin: 4rem;
   }
   header .menu.active ul {
     height: 50%;
@@ -559,6 +562,23 @@ footer .footer .media {
   header .menu ul li {
     text-align: start;
   }
+  .services .part {
+    display: block !important;
+  }
+  .services .part .image, .services .part .text {
+    width: 100% !important;
+  }
+  .services .part a {
+    text-align: center;
+  }
+  .sec2 .container {
+    display: block !important;
+    padding: 2rem;
+  }
+  .sec2 .container .sub {
+    margin-top: 2rem;
+    text-align: right;
+  }
   footer .menu ul, footer .contact {
     display: grid !important;
     grid-template-columns: 1fr 1fr;
@@ -566,7 +586,7 @@ footer .footer .media {
   }
   footer .media {
     display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   }
   footer .media i {
     text-align: center;

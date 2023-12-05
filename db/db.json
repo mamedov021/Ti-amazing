@@ -57,8 +57,30 @@
    
    ],
    "portfolio":[
+    
     { "id": "1",
       "img": "./media/portfolio/p1.jpg" ,
+      "images":[
+        {       
+          "img":"./media/lorem/lorem1.png"
+        },
+        { 
+          "img":"./media/lorem/lorem2.png"
+        },
+        { 
+          "img":"./media/lorem/lorem3.png"
+        },
+        { 
+          "img":"./media/lorem/lorem4.png"
+        },
+        { 
+          "img":"./media/lorem/lorem5.png"
+        },
+        { 
+          "img":"./media/lorem/lorem6.png"
+        }
+    
+      ],
       "name":"Lorem ipsum"
     },
     { "id": "2",
@@ -156,6 +178,7 @@
 
   
   ],
+
   "lorem":[
     {
       "id":1,

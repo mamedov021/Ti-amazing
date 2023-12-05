@@ -63,9 +63,12 @@ fetch("http://localhost:3000/portfolio")
   .then((res) => res.json())
   .then((data) => {
     data.forEach(({ id, img, name }) => {
-      portfolio.innerHTML += `
+      portfolio.innerHTML+= `
       <div class="content">
-      <img src="${img}" alt="">
+      
+      <a href="./lorem.html?id=${id}">
+        <img src="${img}" alt="">
+      </a>
       <h4>${name}  ${id}</h4> 
   </div>
       `;
@@ -99,17 +102,17 @@ fetch("http://localhost:3000/our_team")
 
 
 
-  let lorem_type= document.querySelector(".lorem_type");
-  fetch("http://localhost:3000/lorem")
-  .then((res)=>res.json())
-  .then((data) => {
-    data.forEach(({img})=>{
-      lorem_type.innerHTML+=`
-      <img src="${img}"> `
+  // let lorem_type= document.querySelector(".lorem_type");
+  // fetch("http://localhost:3000/lorem")
+  // .then((res)=>res.json())
+  // .then((data) => {
+  //   data.forEach(({img})=>{
+  //     lorem_type.innerHTML+=`
+  //     <img src="${img}"> `
 
-    } )
-  })
-  .catch((err)=>{
-    console.error(err)
-  })
+  //   } )
+  // })
+  // .catch((err)=>{
+  //   console.error(err)
+  // })
 

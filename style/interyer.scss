@@ -1,6 +1,5 @@
 .interyer{
-    background-color:#565656;
-    width: 100vw;
+    background-color:#565656; 
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -171,4 +170,24 @@
     
 }
     
+}
+@media (max-width: 1020px) {
+    .interyer {
+        .interyer_info {
+            display: block !important;
+            .info,img{
+                width: 100%;
+            }
+            
+            }
+            .request {
+                .main{
+                    display: block !important;
+                    .image, form{
+                        width: 100%;
+                        margin-bottom: 1rem;;
+                    }
+                }
+        }
+    }
 }

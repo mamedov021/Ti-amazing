@@ -247,7 +247,7 @@
   .about .request .main .image img {
     width: 100%;
   }
-  .about .members {
+  .about .our_team .members {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
   }

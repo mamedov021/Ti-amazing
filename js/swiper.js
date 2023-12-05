@@ -1,10 +1,10 @@
-var swiper1 = new Swiper(".mySwiper2", {
+let swiper1 = new Swiper(".mySwiper2", {
   pagination: {
     el: ".swiper-pagination",
   },
 });
 
-var swiper2 = new Swiper(".portfolio-swiper", {
+let swiper2 = new Swiper(".portfolio-swiper", {
   effect: "coverflow",
   grabCursor: true,
   loop: true,
