@@ -28,9 +28,10 @@ header {
     }
   }
 
-  .bars {
+  .bars_2, .bars_1{
     display: none;
   }
+  
 
   .menu {
     display: flex;
@@ -202,7 +203,6 @@ header {
         &::before {
           content: "";
           position: absolute;
-          
           left: -5px;
           right: -5px;
           top: -5px;
@@ -598,7 +598,7 @@ footer {
     .logo {
       // order: 1;
     }
-    .bars {
+    .bars_1 {
       display: block;
       // order: 2;
     }
@@ -608,20 +608,22 @@ footer {
       padding-left: 0;
       &.active {
         display: block !important;
-        top: 8rem;
-      ;
-        position: absolute;
-        width: 200px;
-        height: 95vh;
-        z-index: 10;
-        background-color: #222222;
+        top: 0;
+        position: fixed;
+        
 
+        width: 300px;
+        height: 500px;
+        z-index: 10;
+        background-color: #222222; 
         left: 0;
-        transform: translateX(0%);
+         
+        transform: translateY(42px, 18px);
         transition: 0.5s;
-        animation: mymove 2s forwards;
+        // animation: mymove 2s forwards;
+        // animation: move 5s infinite;
         .bars_2{
-          display: block;
+          display: none;
           text-align: right;
           margin: 4rem;;
 
@@ -684,11 +686,21 @@ footer {
      }
     }
 }
-@keyframes mymove {
-  from {
-    top: -95vh;
-  }
-  to {
-    top: 8rem;
-  }
-}
+// @keyframes mymove {
+//   from {
+//     top: -95vh;
+//   }
+//   to {
+//     top: 0;
+//   }
+  
+// }
+// @keyframes move {
+//   from {
+//     top: 0;
+//   }
+//   to {
+//     top: -95vh;
+//   }
+  
+// }

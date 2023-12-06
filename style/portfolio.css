@@ -41,6 +41,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+.container .portfolio_container .content img {
+  width: 100%;
+}
 .container .portfolio_container .content h4 {
   font-family: Baskerville;
   font-weight: 400;
