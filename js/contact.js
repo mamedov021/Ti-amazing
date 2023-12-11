@@ -3,6 +3,8 @@ const submitBtn = document.querySelector("#submit")
 submitBtn.addEventListener("click", handleSubmit);
 
 function handleSubmit(event) {
+
+  alert("Your information has been sent!")
   event.preventDefault();
   let formData = new FormData(form);
   let data = Object.fromEntries(formData);

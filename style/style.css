@@ -146,7 +146,6 @@ header .menu ul .əlaqə a {
   font-size: 18px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .home .swiper-slide img {
   display: block;
@@ -158,6 +157,14 @@ header .menu ul .əlaqə a {
 }
 .home .swiper-slide .info {
   position: absolute;
+  padding-top: 7rem;
+}
+.home .swiper-slide .info .black_h {
+  color: black;
+  margin-bottom: 10rem;
+}
+.home .swiper-slide .info p {
+  padding: 0 20%;
 }
 .home .swiper-slide .info h2 {
   font-family: Baskerville;
@@ -167,6 +174,7 @@ header .menu ul .əlaqə a {
   text-align: center;
   color: #fff;
   line-height: 67px;
+  margin-bottom: 15rem;
 }
 .home .swiper-slide .info button {
   width: 250px;
@@ -436,6 +444,11 @@ header .menu ul .əlaqə a {
   justify-content: space-around;
   align-items: center;
 }
+.sec2 .request .container form {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
 .sec2 .request .container .text {
   display: flex;
   gap: 2rem;
@@ -452,7 +465,7 @@ header .menu ul .əlaqə a {
 .sec2 .request .container .sub {
   position: relative;
 }
-.sec2 .request .container .sub::before {
+.sec2 .request .container .sub button::before {
   content: "";
   position: absolute;
   left: -5px;
@@ -462,7 +475,7 @@ header .menu ul .əlaqə a {
   border: 1px solid #fff;
   z-index: 100;
 }
-.sec2 .request .container .sub:hover::before {
+.sec2 .request .container .sub button:hover::before {
   left: 0;
   right: 0;
   top: 0;
@@ -475,6 +488,8 @@ header .menu ul .əlaqə a {
   background-color: #9fb576;
   border: none;
   color: #fff;
+  position: relative;
+  z-index: 9999;
 }
 
 footer {
@@ -596,11 +611,17 @@ footer .footer .media {
     display: block !important;
     padding: 2rem;
   }
+  .sec2 .container form {
+    display: block !important;
+    margin-top: 5rem;
+  }
   .sec2 .container .sub {
     width: -moz-max-content;
     width: max-content;
-    margin-top: 2rem;
     text-align: right;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 2rem;
   }
   footer .menu ul, footer .contact {
     display: grid !important;
@@ -623,8 +644,8 @@ footer .footer .media {
     top: 0;
   }
 }
-@media (min-width: 1030px) {
+@media (min-width: 1020px) {
   .bars_1, .bars_1 *, .bars_2, .bars2 * {
-    display: none !important;
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
