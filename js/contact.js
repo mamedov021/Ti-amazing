@@ -10,7 +10,7 @@ function handleSubmit(event) {
   let data = Object.fromEntries(formData);
   // let jsonData = JSON.stringify(data);
 
-  fetch("http://localhost:3000/post", {
+  fetch("https://db-ti-amazing.vercel.app/post", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

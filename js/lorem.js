@@ -1,7 +1,7 @@
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 
-fetch(`http://localhost:3000/portfolio/${id}`)
+fetch(`https://db-ti-amazing.vercel.app/portfolio/${id}`)
   .then((res) => res.json())
   .then((data) => {
    // console.log(data);

@@ -1,6 +1,6 @@
 const services = document.querySelector(".services");
 
-fetch("http://localhost:3000/service")
+fetch("https://db-ti-amazing.vercel.app/service")
   .then((res) => res.json())
   .then((data) => {
     data.forEach(({ header, img, info }) => {
@@ -28,7 +28,7 @@ fetch("http://localhost:3000/service")
   });
 
 let jobs = document.querySelector(".jobs");
-let job_url = "http://localhost:3000/jobs";
+let job_url = "https://db-ti-amazing.vercel.app/jobs";
 fetch(job_url)
   .then((res) => res.json())
   .then((data) => {
@@ -48,7 +48,7 @@ fetch(job_url)
 
 
 let portfolio = document.querySelector(".portfolio_container");
-fetch("http://localhost:3000/portfolio")
+fetch("https://db-ti-amazing.vercel.app/portfolio")
   .then((res) => res.json())
   .then((data) => {
     data.forEach(({ id, img, name }) => {
@@ -69,7 +69,7 @@ fetch("http://localhost:3000/portfolio")
 
 let our_team = document.querySelector(".our_team");
 let members = document.querySelector(".members");
-fetch("http://localhost:3000/our_team")
+fetch("https://db-ti-amazing.vercel.app/our_team")
   .then((res) => res.json())
   .then((data) => {
     data.forEach(({ img, name, prof }) => {

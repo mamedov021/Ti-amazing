@@ -11,14 +11,20 @@ body {
 .container .buttons {
   margin-top: 3rem;
   width: 85vw;
-  display: flex;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
   justify-content: space-between;
-  height: 4rem;
+  place-items: center;
 }
 .container .buttons button {
   font-family: San Francisco;
   font-size: 14px;
   font-weight: 300;
+  width: 200px;
+  height: 50px;
   line-height: 17px;
   letter-spacing: 0em;
   text-align: center;

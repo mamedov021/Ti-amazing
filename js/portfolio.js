@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 async function fetchDataHandler() {
   try {
-    const response = await fetch("http://localhost:3000/portfolio");
+    const response = await fetch("https://db-ti-amazing.vercel.app/portfolio");
     const data = await response.json();
     portfolioData = data;
   } catch (error) {
