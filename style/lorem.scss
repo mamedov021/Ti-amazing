@@ -46,13 +46,14 @@
         justify-content: center;
         width: 85vw;
         #img{
+            width: 100%;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             align-items: center;
             justify-content: center;
              
           img{
-            width: 30%;
+            width: 100%;
             height: 350px;
             margin: 2rem;
             

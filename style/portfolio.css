@@ -46,7 +46,7 @@ body {
 .container .portfolio_container .content {
   display: flex;
   flex-direction: column;
-  width: 85vw;
+  width: 85%;
 }
 .container .portfolio_container .content img {
   width: 100%;
