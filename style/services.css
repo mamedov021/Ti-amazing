@@ -38,9 +38,6 @@
 }
 
 @media (max-width: 1020px) {
-  .our_service::after, ::before {
-    display: none !important;
-  }
   .sec2 .part {
     display: block !important;
   }

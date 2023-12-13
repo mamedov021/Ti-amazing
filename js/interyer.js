@@ -21,3 +21,5 @@ let swiper = new Swiper(".portfolio-swiper", {
    
   });
   
+let design_info = document.querySelector(".design_info");
+ 

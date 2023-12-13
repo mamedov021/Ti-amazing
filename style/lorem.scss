@@ -46,8 +46,8 @@
         justify-content: center;
         width: 85vw;
         #img{
-            display: flex;
-            flex-wrap: wrap; 
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             align-items: center;
             justify-content: center;
              

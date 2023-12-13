@@ -79,6 +79,11 @@
   left: -15px;
   top: -15px;
 }
+.about .our_team .members .member .img-container:hover {
+  transition: 0.5s;
+  left: 0;
+  top: 0s;
+}
 .about .our_team .members .member .img-container img {
   width: 100%;
   height: 100%;
@@ -198,7 +203,7 @@
   color: #fff;
 }
 .about .request .btn {
-  width: 100%;
+  width: 85vw;
   display: flex;
   justify-content: flex-end;
 }
