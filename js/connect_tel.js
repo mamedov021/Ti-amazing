@@ -18,6 +18,7 @@ function handleSubmit(e) {
         console.log(res); // Log the response here
         return res.json();
     })
+
     .then((result) => console.log(result))
     .catch((err) => console.log(err));
 }

@@ -21,9 +21,13 @@ let swiper = new Swiper(".portfolio-swiper", {
    
   });
   
+const params = new URLSearchParams(window.location.search);
+const _id = params.get("id");
+console.log(_id);
+
   let design_info = document.querySelector(".design_info");
  
-fetch("https://db-ti-amazing.vercel.app/sevices_type")
+fetch(`https://db-ti-amazing.vercel.app/sevices_type?id=${_id}`)
     .then((res) => res.json())
     .then((data) => {
         data.forEach(({ name, img, info }) => {

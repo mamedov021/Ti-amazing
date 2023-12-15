@@ -1,10 +1,14 @@
+ 
+// 
 const services = document.querySelector(".services");
 
 fetch("https://db-ti-amazing.vercel.app/service")
   .then((res) => res.json())
   .then((data) => {
-    data.forEach(({ header, img, info }) => {
+    console.log(data);
+    data.forEach(({ header, img, info,id }) => {
       services.innerHTML += `
+      <div  data-aos="fade-left"  data-aos-duration="1500" >
         <div class="part">
          <div class="image">
           <img src=${img} alt="img" /> 
@@ -13,12 +17,13 @@ fetch("https://db-ti-amazing.vercel.app/service")
             <h2 id="part">${header}</h2>
             <p>${info}</p>
            
-             <a href="interyer.html">
+             <a href="../interyer.html?id=${id}">
               <button> 
              Daha ətraflı <i class="fa-solid fa-arrow-right-long"></i>
              </button></a>
             
           </div>
+        </div>
         </div>
       `;
     });
@@ -89,6 +94,10 @@ fetch("https://db-ti-amazing.vercel.app/our_team")
     console.log(err);
   });
 
+
+  
+
+  AOS.init();  
 
 
   // let lorem_type= document.querySelector(".lorem_type");

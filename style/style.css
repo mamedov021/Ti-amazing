@@ -1,6 +1,7 @@
 @charset "UTF-8";
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -646,6 +647,6 @@ footer .footer .media {
 }
 @media (min-width: 1020px) {
   .bars_1, .bars_1 *, .bars_2, .bars2 * {
-    display: none;
+    display: none !important;
   }
 }/*# sourceMappingURL=style.css.map */
