@@ -719,7 +719,10 @@ footer {
         margin-top:2rem;
       }
     }
-  }
+      .main .services .part .image::before {
+      display:none;
+    }
+    }
    footer{
      .menu ul, .contact{
       display:grid !important;

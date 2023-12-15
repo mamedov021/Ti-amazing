@@ -624,6 +624,9 @@ footer .footer .media {
     justify-content: flex-end;
     margin-top: 2rem;
   }
+  .sec2 .main .services .part .image::before {
+    display: none;
+  }
   footer .menu ul, footer .contact {
     display: grid !important;
     grid-template-columns: 1fr 1fr;

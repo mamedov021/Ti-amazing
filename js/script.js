@@ -8,7 +8,7 @@ fetch("https://db-ti-amazing.vercel.app/service")
     console.log(data);
     data.forEach(({ header, img, info,id }) => {
       services.innerHTML += `
-      <div  data-aos="fade-left"  data-aos-duration="1500" >
+      <div    data-aos="flip-left"  data-aos-duration="1500" >
         <div class="part">
          <div class="image">
           <img src=${img} alt="img" /> 
